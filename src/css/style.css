@@ -1,0 +1,304 @@
+form {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 4px solid var(--second-color);
+    text-align: center;
+    background: radial-gradient(circle, var(--fifth-color), var(--first-color));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+fieldset{
+    margin: 2%;
+}
+
+legend{
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+label{
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'subtitle-font';
+    font-weight: bold;
+    color: white;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 3px solid var(--second-color);
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--second-color);
+    background: var(--first-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 3px solid var(--second-color);
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--second-color);
+    background: var(--first-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+select{
+    width: 20%;
+    padding: 6px;
+    border: 3px solid var(--second-color);
+    font-weight: bold;
+    color: var(--second-color);
+    background: var(--first-color);
+    border-radius: 8px;
+}
+
+button {
+    width: 50%;
+    padding: 15px;
+    border: 3px solid var(--second-color);
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--second-color);
+    background-color: var(--first-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:active{
+    color: var(--first-color);
+    background: radial-gradient(circle, var(--second-color), var(--fourth-color));
+}
+
+.home-img{
+    width: 100%;
+    height: 105vh;
+    margin-top: -60px;
+    background-image: 
+        linear-gradient(to top, var(--first-color) 0%, transparent 20%),
+        url(../../resources/img/HomeBG.jpeg);
+    background-size: 100% auto;
+}
+
+.modif-title{
+    margin: 0;
+    padding-top: 5%;
+    font-size: 8vw;
+    font-family: 'title-font';
+    color: var(--fourth-color);
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+    text-decoration: underline;
+}
+
+.modif-subtitle{
+    margin-top: -8px;
+    font-size: 3vw;
+    font-family: 'subtitle-font';
+    color: var(--second-color);
+    text-shadow: 4px 4px 20px black;
+    text-align: center;
+}
+
+.display-video{
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+    height: 55vh;
+    margin-top: -10px;
+}
+
+.display-video iframe{
+    width: 53vw;
+}
+
+.display-text1{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.text1-image-modif{
+    width: 55vw;
+    margin: 2%;
+    border: 4px solid var(--second-color);
+    border-radius: 8px;
+}
+
+.text1-text-modif{
+    margin: 2%;
+    font-family: 'text-font';
+    font-size: 1.4vw;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.display-form{
+    display:  grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.modif-title-review{
+    margin-left: 20px;
+    font-family: 'subtitle-font';
+    color: var(--second-color);
+    text-align: center;
+}
+
+.modif-input:focus, select:focus{
+    border: 3px solid var(--fourth-color);
+    color: var(--first-color);
+    background-color: var(--second-color);
+}
+
+.modif-input:hover{
+    border: 3px solid var(--fourth-color);
+}
+
+.center-image-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modif-image-review{
+    width: 90%;
+    height: 80%;
+}
+
+@media(min-width:320px) and (max-width:480px){
+    form {
+        margin-left: 0;
+        margin-bottom: 20px;
+        border: 2px solid var(--second-color);
+        text-align: center;
+        background: radial-gradient(circle, var(--fourth-color), var(--fifth-color));
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .home-img{
+        width: 100vw;
+        height: 75vh;
+        margin-top: 0;
+        background-size: 154vh;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .modif-title{
+        padding-top: 10%;
+        font-size: 14vw;
+    }
+
+    .modif-subtitle{
+        margin-top: 0;
+        font-size: 5vw;
+    }
+
+    .display-video{
+        width: 100vw;
+        height: 30vh;
+        margin-top: 10%;
+    }
+
+    .display-video iframe{
+        width: 90vw;
+    }
+
+    .display-text1{
+        display: inline;
+    }
+
+    .text1-image-modif{
+        width: 95vw;
+        margin-top: -2vh;
+        border: 2px solid var(--second-color);
+    }
+
+    .text1-text-modif{
+        margin: 3%;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .display-form{
+        display:  inline;
+    }
+
+    .modif-title-review{
+        margin-left: 0;
+        font-size: 5vw;
+    }
+
+    legend{
+        padding: 5%;
+        font-size: 4vw;
+    }
+
+    label{
+        padding: 4%;
+        font-size: 4vw;
+    }
+
+    input{
+        width: 100%;
+        margin-bottom: 0;
+        padding: 4%;
+        border: 2px solid var(--second-color);
+        font-size: 4vw;
+    }
+
+    .modif-input:focus, select:focus{
+        border: 2px solid var(--fourth-color);
+    }
+
+    .modif-input:hover{
+        border: 2px solid var(--fourth-color);
+    }
+
+    textarea{
+        margin-bottom: 0;
+        padding: 4%;
+        border: 2px solid var(--second-color);
+        font-size: 4vw;
+    }
+
+    select{
+        padding: 2%;
+        border: 2px solid var(--second-color);
+    }
+
+    button {
+        width: 50%;
+        padding: 5%;
+        font-size: 4vw;
+    }
+
+    .center-image-review{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modif-image-review{
+        width: 75%;
+        height: 45vh;
+    }
+}

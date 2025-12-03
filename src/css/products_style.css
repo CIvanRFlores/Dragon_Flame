@@ -1,0 +1,106 @@
+input{
+    width: 20%;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'subtitle-font';
+    color: var(--second-color);
+    background-color: var(--first-color);
+    border: 3px solid var(--second-color);
+    border-radius: 8px;
+}
+
+input:focus, select:focus{
+    color: var(--first-color);
+    background: radial-gradient(circle, var(--second-color, var(--first-color)));
+    border: 3px solid var(--fourth-color);
+}
+
+input:hover{
+    border: 3px solid var(--fourth-color);
+}
+
+#product-image{
+    width: 22vw;
+    height: 42vh;
+    margin: 5%;
+    background-color: white;
+    border-radius: 2%;
+}
+
+.searchbar-modif{
+    display: flex;
+    margin-top: 1%;
+    margin-right: 2%;
+    justify-content: flex-end;
+}
+
+.button-searchbar-modif{
+    width: 53px;
+    height: 45px;
+    margin-left: 6px;
+    background-color: var(--first-color);
+    border: 2px solid var(--second-color);
+    border-radius: 8px;
+}
+
+.button-searchbar-modif:hover{
+    border: 3px solid var(--fourth-color);
+    cursor: pointer;
+}
+
+.button-searchbar-modif:active{
+    background: var(--second-color);
+    cursor: pointer;
+}
+
+.grid-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3%;
+    margin: 2%;
+    margin-bottom: 4%;
+}
+
+.card-container
+{
+    padding: 4%;
+    font-family: Arial;
+    color: var(--second-color);
+    text-align: center;
+    background-color: var(--first-color);
+    background: radial-gradient(circle, var(--fifth-color), var(--first-color));
+    border: 3px solid var(--second-color);
+    border-radius: 2%;
+}
+
+.name-product-modif{
+    margin: 2%;
+    font-size: 22px;
+}
+
+.price-product-modif{
+    margin: 4%;
+    font-size: 18px;
+}
+
+.button-design
+{
+    padding: 4%;
+    width: 45%;
+    font-size: 22px;
+    font-family: Arial;
+    font-weight: bold;
+    color: var(--second-color);
+    text-shadow: 1px 1px 5px black;
+    background-color: var(--first-color);
+    border: 3px solid var(--second-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-design:active{
+    color: var(--first-color);
+    text-shadow: none;
+    background-color: var(--second-color);
+}
