@@ -139,10 +139,9 @@ button:active{
 .display-video{
     display: flex;
     justify-content: center;
-    width: 99vw;
-    height: 55vh;
+    width: 100vw;
+    height: 59vh;
     margin-top: -10px;
-    border-color: var(--second-color);
 }
 
 .display-video iframe{
