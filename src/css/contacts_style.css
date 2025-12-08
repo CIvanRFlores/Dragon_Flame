@@ -1,32 +1,31 @@
 body{
-    background: linear-gradient(to top, var(--first-color) 0%, transparent 20%);
+    background-image: url(../../public/resources/img/bg_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .contacts-title{
-    font-size: 300%;
+    margin: 2%;
+    font-size: 220%;
     color: var(--second-color);
     font-family: 'subtitle-font';
+    text-shadow: 4px 4px 10px var(--first-color);
 }
 
 .contacts-modif{
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    gap: 2%;
+    width: 40%;
 }
 
 .contact-btn{
-    width: 100%;
-    height: 79%;
-    border-radius: 14%;
+    margin: 3%;
     border: none;
     cursor: pointer;
-    background-color: black;
+    background-color: transparent;
 }
 
 .contact-btn img{
     width: 100%;
-    height: 100%;
     border: 5px solid var(--second-color);
     border-radius: 14%;
     transition: all 0.5s ease;

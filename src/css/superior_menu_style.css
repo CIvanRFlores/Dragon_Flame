@@ -1,16 +1,16 @@
 @font-face{
     font-family: 'subtitle-font';
-    src: url(../../resources/fonts/IBMPlexSans-VariableFont_wdth\,wght.ttf) format('truetype');
+    src: url(../../public/resources/fonts/IBMPlexSans-VariableFont_wdth\,wght.ttf) format('truetype');
 }
 
 @font-face{
     font-family: 'title-font';
-    src: url(../../resources/fonts/MozillaHeadline-VariableFont_wdth\,wght.ttf) format(truetype);
+    src: url(../../public/resources/fonts/MozillaHeadline-VariableFont_wdth\,wght.ttf) format(truetype);
 }
 
 @font-face{
     font-family: 'text-font';
-    src: url(../../resources/fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf) format(truetype);
+    src: url(../../public/resources/fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf) format(truetype);
 }
 
 :root{
@@ -19,11 +19,14 @@
     --third-color: #f77f00;
     --fourth-color: #ac2321;
     --fifth-color: #5c1778;
+    --sixth-color: #0D0D0D;
+    --seventh-color: #531211;
 }
 
 
 html{
     overscroll-behavior: none;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -183,7 +186,7 @@ button .head-container{
     }
     
     .menu-icon{
-        background-image: url(../../resources/img/BurgerMenuIcon.png);
+        background-image: url(../../public/resources/img/BurgerMenuIcon.png);
     }
 
     .head-container{

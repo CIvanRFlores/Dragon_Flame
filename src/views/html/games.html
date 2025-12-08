@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DF | Juegos</title>
+  <link rel="stylesheet" href="../../css/games_style.css">
+  <link rel="stylesheet" href="../../css/superior_menu_style.css">
+  <link href="../../../public/output.css" rel="stylesheet">    <!--Ejecutar npm run dev en la terminal siempre al inicio-->
+</head>
+<body>
+    <header class="z-40">
+        <input class="toggle-menu" type="checkbox" id="burger-menu">
+        <label class="menu-btn menu-icon" for="burger-menu"></label>
+        <nav class="head-content">
+            <ul class="menu">
+                <li><a class="head-container" href="../../../public/index.html">Inicio</a></li>
+                <li><a class="head-container" href="#">Juegos</a></li>
+                <li class="drop-menu"><a class="head-container" href="products.html">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="products.html">Ropa</a></li>
+                        <li><a href="products.html">Accesorios</a></li>
+                        <li><a href="products.html">Peluches</a></li>
+                        <li><a href="products.html">Stickers</a></li>
+                        <li><a href="products.html">Figuras</a></li>
+                    </ul>
+                </li>
+                <li><a class="head-container" href="contacts.html">Contactos</a></li>
+                <li><a class="head-container" href="notice.html">Avisos</a></li>
+                <li><a class="head-container" href="#">Nosotros</a></li>
+                <li><a class="head-container small-img" href="add_products.html"><img src="../../../public/resources/img/ToolMode.png" alt="" style="height: 40%; width: 30px;"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="searchbar-modif">
+            <input id="searchproduct" type="text" name="searchproduct" placeholder="Buscar juego...">
+            <button class="button-searchbar-modif"><img src="../../../public/resources/img/SearchIcon.png"></button>
+            <button class="button-searchbar-modif"><img src="../../../public/resources/img/FilterIcon.png"></button>
+        </div>
+
+      <div class="relative w-full max-w-4xl mx-auto pt-8 pb-8">
+        
+        <div class="overflow-hidden relative border-2 rounded-sm border-amber-300 cursor-pointer">
+          <div class="flex transition-transform duration-200 ease-in-out" id="carousel">
+
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../../public/resources/img/vgimg_1.jpg">
+            </div>
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../../public/resources/img/vgimg_2.jpg">
+            </div>
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../../public/resources/img/vgimg_3.jpg">
+            </div>
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../../public/resources/img/vgimg_4.jpg">
+            </div>
+            <div class="min-w-full bg-purple-800 flex justify-center items-center h-64">
+              <img class="h-80 w-dvw" src="../../../public/resources/img/vgimg_5.jpg">
+            </div>
+          </div>
+
+          <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black text-yellow-300 p-2 rounded-full cursor-pointer border-2">
+            &#10094;
+          </button>
+          <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black text-yellow-300 p-2 rounded-full cursor-pointer border-2">
+            &#10095;
+          </button>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div>
+        <div id="game1" class="card-games">
+          <img src="../../../public/resources/img/vgtitle1.jpg">
+          <div class="container-card">
+            <h3>Ultrakill</h3>
+            <p>Ultrakill es un FPS retro ultraviolento y de ritmo rápido que combina el estilo basado en habildiades y la puntuación e juegos de acción con la carnicería desenfrenada inspirada en los mejores shooters de los 90.</p>
+            <button class="button-design">Mas informacion</button>
+          </div>
+        </div>
+        <div id="game2" class="card-games">
+          <img src="../../../public/resources/img/vgtitle2.jpg">
+          <div class="container-card">
+            <h3>Deltarune</h3>
+            <p>¡Sumérgete en la historia paralela de Undertale! Lucha o perdona en intensas batallas mientras exploras un mundo misterioso junto a un entrañable elenco de personajes nuevos y familiares.</p>
+            <button class="button-design">Mas informacion</button>
+          </div>
+        </div>
+        <div id="game3" class="card-games">
+          <img src="../../../public/resources/img/vgtitle3.jpg">
+          <div class="container-card">
+            <h3>Hotline Miami</h3>
+            <p>Hotline Miami es un juego de acción de alto octanaje que rebosa brutalidad en estado puro, violentos tiroteos y demoledores combates cuerpo a cuerpo.</p>
+            <button class="button-design">Mas informacion</button>
+          </div>
+        </div>
+        <div id="game4" class="card-games">
+          <img src="../../../public/resources/img/vgtitle4.jpg">
+          <div class="container-card">
+            <h3>Hollow Knight</h3>
+            <p>¡Forja tu propio camino en Hollow Knight! Una aventura épica a través de un vasto reino de insectos y héroes que se encuentra en ruinas. Explora ruinas, combate con feroces enemigos y entabla amistad con extraños insectos.</p>
+            <button class="button-design">Mas informacion</button>
+          </div>
+        </div>
+        <div id="game5" class="card-games">
+          <img src="../../../public/resources/img/vgtitle5.jpg">
+          <div class="container-card">
+            <h3>Hollow Knight: Silksong</h3>
+            <p>¡Descubre un vasto reino embrujado en Hollow Knight: Silksong! Explora, lucha y sobrevive mientras asciendes a la cima de un vasto reino gobernado por la seda y el canto.</p>
+            <button class="button-design">Mas informacion</button>
+          </div>
+        </div>
+        <div id="game6" class="card-games">
+          <img src="../../../public/resources/img/vgtitle6.jpg">
+          <div class="container-card">
+            <h3>HELLDIVERS™ 2</h3>
+            <p>La última linea de ataque de la galaxia. Alistate en los Helldivers y únete a la lucha por la libertad en una galaxia hostil en un juego de disparos en tercera persona rápido, frenético y feroz.</p>
+            <button class="button-design">Mas informacion</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div>
+            <p style="color: white; text-align: center;">&copy; 2025 Dragon Flame. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/games_script.js" defer></script>
+</body>
+</html>
